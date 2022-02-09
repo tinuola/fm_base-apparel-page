@@ -9,10 +9,18 @@ body {
   text-rendering: optimizeSpeed;
   font-family: var(--main-font);
   font-size: 16px;
+  /* min-height: 100vh; */
+  /* background: var(--color-secondary); */
 }
 
 .site-wrapper {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background: linear-gradient(
+135deg
+, hsl(0, 0%, 100%), hsl(0, 100%, 98%))
 }
 
 /* Hide elements for accessibility */
@@ -41,9 +49,53 @@ main {
 
 }
 
+.boundary-container {
+  padding: 0 2rem;
+}
+
+.logo-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.site-logo {
+  width: 125px;
+}
+
 .img-container-mobile {
-  background-image: url(../assets/images/hero-mobile.jpg);
+  background-image: url(../../assets/images/hero-mobile.jpg);
   background-size:cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  background-position: top center;
+}
+
+.inner-content-container {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: var(--color-neutral);
+  line-height: 1.125;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+}
+
+span {
+  color:var(--color-secondary);
+  font-weight: 300;
+}
+
+h3 {
+  color: var(--color-secondary);
+  font-weight: 400;
+  font-size: .875rem;
+  line-height: 1.75;
+  margin-bottom: 2rem;
 }
 
 .img-container-desktop {
@@ -58,7 +110,22 @@ main {
   }
 }
 
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: var(--color-secondary);
+}
 
-/* .attribution { font-size: 11px; text-align: center; } */
+.fm-attribution-row {
+  margin-right: 1.5rem;
+}
 
-/* .attribution a { color: hsl(228, 45%, 44%); } */
+.fm-attribution {
+  font-size: .75rem;
+  text-align: right;
+  color: var(--color-neutral);
+}
+
+.fm-attribution a {
+  color: var(--color-neutral);
+}
