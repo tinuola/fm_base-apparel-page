@@ -1,0 +1,16 @@
+:root {
+  --color-primary: hsl(0, 93%, 68%);
+  --color-secondary: hsl(0, 36%, 70%);
+  --color-neutral: hsl(0, 6%, 24%);
+  --main-font: 'Josefin Sans', sans-serif;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  font-family: var(--main-font);
+  font-size: 16px;
+}
+
+/* .attribution { font-size: 11px; text-align: center; } */
+
+/* .attribution a { color: hsl(228, 45%, 44%); } */
