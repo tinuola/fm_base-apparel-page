@@ -11,6 +11,54 @@ body {
   font-size: 16px;
 }
 
+.site-wrapper {
+
+}
+
+/* Hide elements for accessibility */
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+main {
+
+}
+
+@media (min-width: 900px) {
+  main {
+    display: flex;
+  }
+}
+
+.content-container {
+
+}
+
+.img-container-mobile {
+  background-image: url(../assets/images/hero-mobile.jpg);
+  background-size:cover;
+}
+
+.img-container-desktop {
+  display: none;
+}
+
+@media(min-width: 900px){
+  .img-container-desktop {
+    display: block;
+    background-image: url(../assets/images/hero-desktop.jpg);
+    background-size: cover;
+  }
+}
+
+
 /* .attribution { font-size: 11px; text-align: center; } */
 
 /* .attribution a { color: hsl(228, 45%, 44%); } */
