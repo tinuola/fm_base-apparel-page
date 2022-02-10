@@ -12,6 +12,18 @@ body {
   background: #fff6f7;
 }
 
+/* Hide elements for accessibility */
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
 .site-wrapper {
   display: flex;
   flex-direction: column;
@@ -32,16 +44,11 @@ body {
   } 
 }
 
-/* Hide elements for accessibility */
-.sr-only {
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
+@media (min-width: 900px){
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-container {
@@ -52,28 +59,23 @@ body {
 }
 
 @media (min-width: 900px) {
-  main {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .main-container {
     flex-basis: 55%;
   }
 }
 
-.boundary-container {
+.bounded-container {
   padding: 0 2rem;
 }
 
 @media (min-width: 900px){
-  .boundary-container {
+  .bounded-container {
     padding-left: 6rem;
     padding-right: 0;
   }
 }
 
-.logo-container {
+.logo-wrapper {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -82,12 +84,18 @@ body {
   width: 125px;
 }
 
+@media (min-width: 900px) {
+  .site-logo {
+    width: 175px;
+  }
+}
+
 .img-container-mobile {
   background-image: url(../assets/images/hero-mobile.jpg);
   background-size:cover;
   background-repeat: no-repeat;
-  height: 300px;
   background-position: top center;
+  height: 300px;  
 }
 
 @media(min-width: 900px){
@@ -96,7 +104,7 @@ body {
   }
 }
 
-.content-container {
+.content-wrapper {
   text-align: center;
   min-height: 400px;
   max-width: 375px;
@@ -104,7 +112,7 @@ body {
 }
 
 @media(min-width:900px){
-  .content-container {
+  .content-wrapper {
     text-align: left;
     max-width: 475px;
     margin: 6.5rem 0 0 0;
@@ -134,7 +142,7 @@ h2 {
   }
 }
 
-span {
+h2 span {
   color:var(--color-secondary);
   font-weight: 300;
 }
@@ -162,6 +170,10 @@ h3 {
   }
 }
 
+/* Form Styling */
+
+
+/* Footer */
 .fm-attribution-row {
   padding-bottom: 1.5rem
 }
