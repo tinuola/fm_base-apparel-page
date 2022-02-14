@@ -28,3 +28,10 @@ img {
 ul, ol {
   list-style: none;
 }
+
+/* Override default appearance of input element on iOS */
+input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
