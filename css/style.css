@@ -204,11 +204,23 @@ input[type=email] {
   width: 100%;
   background: none;
   font-family: var(--main-font);
-  font-size: 1rem;
+  font-size: .875rem;
+  soutline: var(--color-primary) solid 1.5px;
+  -moz-border-radius:24px;
+  -webkit-border-radius:24px;
+  border-radius: 24px; 
+}
+
+@media (min-width: 900px){
+  input[type=email] {
+    font-size: 1rem;
+  }
 }
 
 input:focus {
-  outline: 1.5px solid var(--color-primary);
+  outline: var(--color-primary) solid 1.5px;
+  -moz-border-radius:24px;
+  -webkit-border-radius:24px;
   border-radius: 24px;
 }
 
@@ -220,20 +232,21 @@ input::placeholder {
 #submit-btn {
   float: right;
   position: relative;
-  /* bottom: 52px; */
   bottom: 57px;
   right: -3px;
   border: none;
   background: none;
   cursor: pointer;
-  /* border: 1px solid #f2a1a1; */
   padding: 1.25rem 2.75rem;
   border-radius: 50px;
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 
 #submit-btn:focus {
-  outline: 1.5px solid var(--color-primary);
+  outline: var(--color-primary) solid 1.5px;
+  -moz-border-radius:50px;
+  -webkit-border-radius:50px;
+  border-radius: 50px;
 }
 
 .input-msg {
