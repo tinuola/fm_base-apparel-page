@@ -209,6 +209,7 @@ input[type=email] {
 
 input:focus {
   outline: 1.5px solid var(--color-primary);
+  border-radius: 24px;
 }
 
 input::placeholder {
@@ -220,14 +221,14 @@ input::placeholder {
   float: right;
   position: relative;
   /* bottom: 52px; */
-  bottom: 53px;
-  right: -1px;
+  bottom: 57px;
+  right: -3px;
   border: none;
   background: none;
   cursor: pointer;
-  border: 1px solid #f2a1a1;
-  padding: 1rem 2rem;
-  border-radius: 40%;
+  /* border: 1px solid #f2a1a1; */
+  padding: 1.25rem 2.75rem;
+  border-radius: 50px;
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 
