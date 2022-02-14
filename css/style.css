@@ -219,7 +219,9 @@ input::placeholder {
 #submit-btn {
   float: right;
   position: relative;
-  bottom: 52px;
+  /* bottom: 52px; */
+  bottom: 53px;
+  right: -1px;
   border: none;
   background: none;
   cursor: pointer;
