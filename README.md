@@ -23,3 +23,6 @@ Live Site: [https://tinuola.github.io/fm-base-apparel-page/](https://tinuola.git
 ### Resources
 - [How to make your fancy SVG button accessible](https://www.freecodecamp.org/news/how-to-make-your-fancy-svg-button-accessible-83c9172c3c15/) _(Free Code Camp)_
 - [button with SVG icon](https://codepen.io/rasx/pen/VeQNgv) _(CodePen: Bryan Wilhite)_
+- Email validation:
+  * [W3 Resource](https://www.w3resource.com/javascript/form/email-validation.php)
+  * [SimpliLearn](https://www.simplilearn.com/tutorials/javascript-tutorial/email-validation-in-javascript)
