@@ -6,9 +6,12 @@ let submitBtn = document.getElementById('submit-btn');
 
 let submitMsg = document.getElementById('submit-msg');
 
+let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
 const sayHello = () => {
-	if (emailInput.value.length === 0) {
+	if (emailInput.value.length === 0 || !emailInput.value.match(emailRegex)) {
 		submitMsg.style.display = 'block';
+		emailInput.value = '';
 	} else {
 		formElem[0].style.display = 'none';
 		submitMsg.style.display = 'block';
