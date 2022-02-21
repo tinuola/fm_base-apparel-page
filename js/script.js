@@ -8,7 +8,7 @@ let submitMsg = document.getElementById('submit-msg');
 
 let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-const sayHello = () => {
+const validateEmail = () => {
 	if (emailInput.value.length === 0 || !emailInput.value.match(emailRegex)) {
 		submitMsg.style.display = 'block';
 		emailInput.value = '';
@@ -19,4 +19,4 @@ const sayHello = () => {
 	}
 };
 
-submitBtn.addEventListener('click', sayHello);
+submitBtn.addEventListener('click', validateEmail);
