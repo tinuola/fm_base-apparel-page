@@ -240,36 +240,36 @@ input::after {
 .icon-container {
   position: absolute;
   right: 0;
-  /* display: inline-block; */
-  /* width: max-content; */
-  /* position: relative; */
-  /* bottom: 55px;
-  left: 90px; */
-  /* background-color: yellow; */
 }
 
 #error-icon {
-  display: inline;
+  display: none;
   position: relative;
-  bottom: 5px;
-  /* position: absolute;
-  bottom: 38px;
-  left: 256px; */
+  bottom: 2px;
+}
+
+@media (min-width: 900px){
+  #error-icon {
+    bottom: 4px;
+  }
 }
 
 #submit-btn {
   display: inline;
-  /* float: right; */
   position: relative;
-  bottom: 7px;
-  /* right: -3px; */
-  /* border: none; */
-  /* background: none; */
+  bottom: 5px;
   border: 1.5px solid #f3a5a5;
   cursor: pointer;
-  padding: 1.25rem 2.75rem;
+  padding: 1rem 2rem;
   border-radius: 50px;
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+@media (min-width: 900px){
+  #submit-btn {
+    bottom: 9px;
+    padding: 1.25rem 2.75rem;
+  }
 }
 
 #submit-btn img {

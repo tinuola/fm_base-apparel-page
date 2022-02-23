@@ -12,7 +12,7 @@ let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 const validateEmail = () => {
 	if (emailInput.value.length === 0 || !emailInput.value.match(emailRegex)) {
-		errorIcon.style.display = 'inline-block';
+		errorIcon.style.display = 'inline';
 		submitMsg.style.display = 'block';
 		emailInput.value = '';
 	} else {
