@@ -297,6 +297,10 @@ input::after {
 }
 
 /* Footer */
+footer {
+  margin-top: 4rem;
+}
+
 .fm-attribution-row {
   padding-bottom: 1.5rem
 }
