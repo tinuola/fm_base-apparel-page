@@ -22,4 +22,12 @@ const validateEmail = () => {
 	}
 };
 
+const clearErrorIcon = () => {
+	if (emailInput.value.length > 0) {
+		errorIcon.style.display = 'none';
+	}
+};
+
 submitBtn.addEventListener('click', validateEmail);
+
+emailInput.addEventListener('keyup', clearErrorIcon);
