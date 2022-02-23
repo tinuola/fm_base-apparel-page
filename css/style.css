@@ -196,6 +196,15 @@ h3 {
 }
 
 /* Form Styling */
+form {
+  position: relative;
+}
+
+.input-container {
+  position: relative;
+  /* background: aqua; */
+  width: 100%;
+}
 
 input[type=email] {
   border: 1.5px solid rgb(214, 196, 196);
@@ -224,18 +233,47 @@ input::placeholder {
   opacity: .5;
 }
 
-#submit-btn {
-  float: right;
+input::after {
+  content: 'hey';
+}
+
+.icon-container {
+  position: absolute;
+  right: 0;
+  /* display: inline-block; */
+  /* width: max-content; */
+  /* position: relative; */
+  /* bottom: 55px;
+  left: 90px; */
+  /* background-color: yellow; */
+}
+
+#error-icon {
+  display: inline;
   position: relative;
-  bottom: 57px;
-  right: -3px;
-  border: none;
-  background: none;
+  bottom: 5px;
+  /* position: absolute;
+  bottom: 38px;
+  left: 256px; */
+}
+
+#submit-btn {
+  display: inline;
+  /* float: right; */
+  position: relative;
+  bottom: 7px;
+  /* right: -3px; */
+  /* border: none; */
+  /* background: none; */
   border: 1.5px solid #f3a5a5;
   cursor: pointer;
   padding: 1.25rem 2.75rem;
   border-radius: 50px;
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+#submit-btn img {
+  display: inline-block;
 }
 
 #submit-btn:focus {

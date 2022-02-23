@@ -2,6 +2,8 @@ let formElem = document.getElementsByTagName('form');
 
 let emailInput = document.getElementById('email-input');
 
+let errorIcon = document.getElementById('error-icon');
+
 let submitBtn = document.getElementById('submit-btn');
 
 let submitMsg = document.getElementById('submit-msg');
@@ -10,6 +12,7 @@ let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 const validateEmail = () => {
 	if (emailInput.value.length === 0 || !emailInput.value.match(emailRegex)) {
+		errorIcon.style.display = 'inline-block';
 		submitMsg.style.display = 'block';
 		emailInput.value = '';
 	} else {

@@ -30,12 +30,18 @@
           <h2 class="cta"><span>We're</span><br> Coming<br> Soon</h2>
           <h3>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</h3>
           <form action="javascript:void(0);">
-            <label for="email-input" class="sr-only">Email Address</label>
-            <input type="email" name="email-address" placeholder="Email Address" id="email-input">
-            <button type="submit" id="submit-btn">
-              <img src="./assets/images/icon-arrow.svg" alt="Arrow icon for button">
-              <span class="sr-only">Submit</span>
-            </button>      
+            <div class="input-container">
+              <label for="email-input" class="sr-only">Email Address</label>
+              <input type="email" name="email-address" placeholder="Email Address" id="email-input">
+              <span class="icon-container">
+                <img src="./assets/images/icon-error.svg" id="error-icon" alt="Error icon">
+                <button type="submit" id="submit-btn">
+                  <img src="./assets/images/icon-arrow.svg" alt="Arrow icon for button">
+                  <span class="sr-only">Submit</span>
+                </button> 
+              </span>
+            </div>
+
           </form>
           <p id="submit-msg">Please provide a valid email.</p>
         </div>
