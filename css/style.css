@@ -140,7 +140,7 @@ body {
 @media(min-width:900px){
   .content-wrapper {
     text-align: left;
-    max-width: 530px;
+    max-width: 550px;
     margin: 6.5rem 0 0 0;
   }
 }
@@ -190,6 +190,7 @@ h3 {
 @media(min-width: 900px){
   h3 {
     font-size: .975rem;
+    width: 400px;
   }
 }
 
@@ -211,6 +212,12 @@ h3 {
 /* Form Styling */
 form {
   position: relative;
+}
+
+@media (min-width: 900px){
+  form {
+    width: 400px;
+  }
 }
 
 .input-container {
