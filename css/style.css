@@ -84,14 +84,8 @@ body {
 
 @media (min-width: 1200px){
   .bounded-container {
-    padding-left: 10rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width: 1681px){
-  .bounded-container {
     padding-left: 14rem;
+    padding-right: 1.5rem;
   }
 }
 
