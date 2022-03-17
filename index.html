@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <!-- displays site properly based on user's device -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Base Apparel Landing Page | Frontend Mentor</title>
-</head>
-<body>
-  <div class="site-wrapper">
-    <header class="sr-only">
-      <h1>Base Apparel Landing Page - A Frontend Mentor Challenge Project</h1>
-    </header>
-    <main>
-      <section class="main-container">
-        <div class="inner-container">
-          <div class="bounded-container logo-wrapper">
-          <img src="assets/images/logo.svg" alt="Site Logo" class="site-logo">
-        </div>
-        <div class="img-container-mobile"></div>
-        <div class="bounded-container content-wrapper">
-          <h2 class="cta"><span>We're</span><br> Coming<br> Soon</h2>
-          <h3>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</h3>
-          <form action="javascript:void(0);">
-            <div class="input-container">
-              <label for="email-input" class="sr-only">Email Address</label>
-              <input type="email" name="email-address" placeholder="Email Address" id="email-input">
-              <span class="icon-container">
-                <img src="assets/images/icon-error.svg" id="error-icon" alt="Error icon">
-                <button type="submit" id="submit-btn">
-                  <img src="assets/images/icon-arrow.svg" alt="Arrow icon for button">
-                  <span class="sr-only">Submit</span>
-                </button> 
-              </span>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Base Apparel Landing Page | Frontend Mentor</title>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header class="sr-only">
+        <h1>Base Apparel Landing Page - A Frontend Mentor Project</h1>
+      </header>
+      <main>
+        <section class="main-container">
+          <div class="inner-container">
+            <div class="bounded-container logo-wrapper">
+              <img src="assets/images/logo.svg" alt="Site Logo" class="site-logo" />
             </div>
-
-          </form>
-          <p id="submit-msg">Please provide a valid email.</p>
-        </div>
-        </div>
-        <footer class="bounded-container">
-          <div class="fm-attribution-row">
-            <p class="fm-attribution">
-              Challenge by <a
-                href="https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0"
-                target="_blank">Frontend Mentor</a></p>
-            <p class="fm-attribution">
-              Coded by <a href="https://github.com/tinuola" target="_blank">TechTinu</a>
-            </p>
+            <div class="img-container-mobile"></div>
+            <div class="bounded-container content-wrapper">
+              <h2 class="cta">
+                <span>We're</span><br />
+                Coming<br />
+                Soon
+              </h2>
+              <h3>
+                Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and
+                our launch deals.
+              </h3>
+              <form action="javascript:void(0);">
+                <div class="input-container">
+                  <label for="email-input" class="sr-only">Email Address</label>
+                  <input type="email" name="email-address" placeholder="Email Address" id="email-input" />
+                  <span class="icon-container">
+                    <img src="assets/images/icon-error.svg" id="error-icon" alt="Error icon" />
+                    <button type="submit" id="submit-btn">
+                      <img src="assets/images/icon-arrow.svg" alt="Arrow icon for button" />
+                      <span class="sr-only">Submit</span>
+                    </button>
+                  </span>
+                </div>
+              </form>
+              <p id="submit-msg">Please provide a valid email.</p>
+            </div>
           </div>
-        </footer>
-      </section>
-      <div class="img-container-desktop"></div>
-    </main>
-  </div>
-  <script src="js/script.js"></script>
-</body>
+          <footer class="bounded-container">
+            <div class="fm-attribution-row">
+              <p class="fm-attribution">
+                Challenge by
+                <a href="https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0" target="_blank"
+                  >Frontend Mentor</a
+                >
+              </p>
+              <p class="fm-attribution">Coded by <a href="https://github.com/tinuola/fm-base-apparel-page" target="_blank">TechTinu</a></p>
+            </div>
+          </footer>
+        </section>
+        <div class="img-container-desktop"></div>
+      </main>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
 </html>
