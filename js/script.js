@@ -11,21 +11,21 @@ let submitMsg = document.getElementById('submit-msg');
 let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 const validateEmail = () => {
-	if (emailInput.value.length === 0 || !emailInput.value.match(emailRegex)) {
-		errorIcon.style.display = 'inline';
-		submitMsg.style.display = 'block';
-		emailInput.value = '';
-	} else {
-		formElem[0].style.display = 'none';
-		submitMsg.style.display = 'block';
-		submitMsg.innerHTML = `Thanks for your email! We'll be in touch!`;
-	}
+  if (emailInput.value.length === 0 || !emailInput.value.match(emailRegex)) {
+    errorIcon.style.display = 'inline';
+    submitMsg.innerHTML = `Please provide a valid email.`;
+    emailInput.value = '';
+  } else {
+    formElem[0].style.display = 'none';
+    submitMsg.style.textAlign = 'left';
+    submitMsg.innerHTML = `Thanks for your email! We'll be in touch!`;
+  }
 };
 
 const clearErrorIcon = () => {
-	if (emailInput.value.length > 0) {
-		errorIcon.style.display = 'none';
-	}
+  if (emailInput.value.length > 0) {
+    errorIcon.style.display = 'none';
+  }
 };
 
 submitBtn.addEventListener('click', validateEmail);
