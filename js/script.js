@@ -17,7 +17,6 @@ const validateEmail = () => {
     emailInput.value = '';
   } else {
     formElem[0].style.display = 'none';
-    submitMsg.style.textAlign = 'left';
     submitMsg.innerHTML = `Thanks for your email! We'll be in touch!`;
   }
 };
