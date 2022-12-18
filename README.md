@@ -14,7 +14,7 @@ Users should be able to:
   - The email address is not formatted correctly
 
 ### Solution
-Live Site: [https://tinuola.github.io/fm-base-apparel-page/](https://tinuola.github.io/fm-base-apparel-page/)
+Live Site: [https://tinuola.github.io/fm_base-apparel-page/](https://tinuola.github.io/fm_base-apparel-page/)
 
 
 ### Tools
